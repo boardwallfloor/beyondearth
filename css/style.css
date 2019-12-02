@@ -1,0 +1,76 @@
+	body {
+	background-image: url("../asset/background.jpg");
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+	footer {
+		margin-bottom: : 40px;
+	}
+
+	.header-image{
+		max-width: 48px;
+	  height: 48px;
+	  margin-left: 20px;
+	}
+
+	.dropdown-content {
+	  top: 100px !important;
+	}
+
+	.brand-name {
+		margin-left: 20px;
+	}
+
+	/* label focus color */
+	 .input-field input:focus + label {
+	   color: red !important;
+	 }
+	 /* label underline focus color */
+	.input-field input:focus {
+	   border-bottom: 1px solid red !important;
+	   box-shadow: 0 1px 0 0 red !important
+	 }
+
+	.input-field .prefix.active {
+	  color: red;
+	}
+
+	.gizmo {
+		border: 1px red solid;
+	}
+
+	.time-nav {
+		display: flex;
+		margin-left: 10px;
+	}
+
+	.time-control {
+		margin-left: 30px;
+	}
+
+	.location-nav {
+		display: flex;
+	}
+
+	.go-current {
+		margin-right: 40px;
+	}
+
+	.current-location {
+		margin-right: 30px;
+	}
+
+	.time-reset {
+		margin-left: 30px;
+	}
+
