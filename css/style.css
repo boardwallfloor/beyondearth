@@ -26,7 +26,19 @@
 	}
 
 	.dropdown-content {
-	  top: 100px !important;
+	  top: 70px !important;
+	  
+	}
+
+	.menu-left {
+		left: 30px !important;
+	}
+
+	.menu-right{
+		left: auto !important;
+		right: 10px !important
+		/*padding-left :100px ;*/
+		/*width : 200px;*/
 	}
 
 	.brand-name {
@@ -93,6 +105,18 @@
 		grid-template-rows: repeat(3,1fr);
 		padding-bottom: 70px;
 	}
+
+	.white-font{
+		color:white;
+	}
+
+	.modal-grid {
+		display: grid;
+		grid-template-rows: repeat(3,1fr);
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 20px;
+	}
+
 
 
 

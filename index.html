@@ -27,45 +27,162 @@
           <li class="search">    
             <div class="input-field ">
             <i class="material-icons prefix">search</i>
-            <input type="text" placeholder="Search.." id="autocomplete-input" class="autocomplete " >
+            <input type="text" placeholder="Search.." id="autocomplete-input" class="autocomplete modal-trigger" >
             </div>         
           </li>   
-          <li><a href="badges.html">Space Objects</a></li>
+          <li><a class="modal-trigger" href="#modal1">Space Objects</a></li>
           <li><a class="logbook" data-target="dropdown2" href="!">Log Book</a></li>
         </ul>
       </div>
   	</nav>
   </header>
   <main>
+
+    <!-- Menu -->
     <section>
-    <!-- Menu Dropdown Structure -->
-    <ul id='dropdown1' class='dropdown-content transparent'>
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li><a href="#!">three</a></li>
-      <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-    </ul>
-    
+      <ul id='dropdown1' class='dropdown-content menu-left grey darken-3 z-depth-1'>
+        <li><h4>Menu</h4></li>
+        <li class="divider"></li>
+        <li><h5>Labels</h5></li>
+
+        <li>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in"/>
+              <span>Star Labels</span>
+            </label>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in"/>
+              <span>Solar System Labels</span>
+            </label>
+          </p>
+        </li>
+
+      </ul>
     </section>
 
+<!-- Observation Log -->
     <section>
-    <!-- Observation Log -->
-    <ul id='dropdown2' class='dropdown-content'>
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider" tabindex="-1"></li>
-        <li><a href="#!">three</a></li>
-        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+      <ul id='dropdown2' class='dropdown-content menu-right grey darken-3 z-depth-1'>
+        <li>
+          <div class="input-field col s6">
+            <input placeholder="Title" id="Title" type="text" class="validate">
+          </div>
+        </li>
+         <li>
+           <div class="input-field col s6">
+            <input placeholder="Coordinate" id="Title" type="text" class="validate">
+          </div>
+        </li>
+         <li>
+           <div class="input-field">
+            <textarea placeholder="Comment" id="Title" type="text" class="materialize-textarea white-text"></textarea>
+          </div>
+        </li>
+        <li>
+          <a class="waves-effect waves-light grey darken-3 white-text btn-flat">Save</a>
+        </li>
       </ul>
     </section>
   
+  <!-- Zoom   -->
     <section>
       <div class="right horizontal-grid">
-        <a class="waves-effect waves-light btn grey darken-3 z-depth-1 grid-horizontal-2-1"><i class="material-icons">zoom_in</i><!-- </a>
-        <a class="waves-effect waves-light btn grey darken-3 z-depth-1"> --><i class="material-icons">zoom_out</i></a>
+        <a class="waves-effect waves-light btn grey darken-3 z-depth-1 grid-horizontal-2-1"><i class="material-icons">zoom_in</i><i class="material-icons">zoom_out</i></a>
         <a class="waves-effect waves-light btn grey darken-3 z-depth-1"><i class="material-icons">zoom_out_map</i></a>
+      </div>
+    </section>
+
+  <!-- TOC -->
+    <section>
+      <!-- Space Log -->
+      <div id="modal1" class="modal">
+        <div class="modal-content grey darken-3 z-depth-1 white-font">
+          <h4>List of Space Object</h4>
+          <div class="input-field ">
+            <i class="material-icons prefix">search</i>
+            <input type="text" placeholder="Search.." id="autocomplete-input" class="autocomplete modal-trigger" >
+            </div> 
+          <div class="modal-grid">
+
+          <div class="card small grey darken-3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Deep_Impact_HRI.jpeg">
+            </div>
+            <div class="card-content ">
+              <span class="card-title activator  text-darken-4 white-font">Comet</span>
+              <p><a class="white-text modal-trigger" href="#comet">Browse Comet</a></p>
+            </div>
+            <div class="card-reveal grey darken-3">
+              <span class="card-title  text-darken-4">Comet<i class="material-icons right">close</i></span>
+              <p>A comet is an icy, small Solar System body that, when passing close to the Sun, warms and begins to release gases, a process called outgassing. This produces a visible atmosphere or coma, and sometimes also a tail. These phenomena are due to the effects of solar radiation and the solar wind acting upon the nucleus of the comet. Comet nuclei range from a few hundred meters to tens of kilometers across and are composed of loose collections of ice, dust, and small rocky particles. The coma may be up to 15 times Earth's diameter, while the tail may stretch one astronomical unit. If sufficiently bright, a comet may be seen from Earth without the aid of a telescope and may subtend an arc of 30° (60 Moons) across the sky. Comets have been observed and recorded since ancient times by many cultures. </p>
+            </div>
+          </div>
+
+          <div class="card small grey darken-3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Deep_Impact_HRI.jpeg">
+            </div>
+            <div class="card-content ">
+              <span class="card-title activator  text-darken-4 white-font">Comet</span>
+              <p><a class="white-text" href="#">Browse Comet</a></p>
+            </div>
+            <div class="card-reveal grey darken-3">
+              <span class="card-title  text-darken-4">Comet<i class="material-icons right">close</i></span>
+              <p>A comet is an icy, small Solar System body that, when passing close to the Sun, warms and begins to release gases, a process called outgassing. This produces a visible atmosphere or coma, and sometimes also a tail. These phenomena are due to the effects of solar radiation and the solar wind acting upon the nucleus of the comet. Comet nuclei range from a few hundred meters to tens of kilometers across and are composed of loose collections of ice, dust, and small rocky particles. The coma may be up to 15 times Earth's diameter, while the tail may stretch one astronomical unit. If sufficiently bright, a comet may be seen from Earth without the aid of a telescope and may subtend an arc of 30° (60 Moons) across the sky. Comets have been observed and recorded since ancient times by many cultures. </p>
+            </div>
+          </div>
+
+          <div class="card small grey darken-3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Deep_Impact_HRI.jpeg">
+            </div>
+            <div class="card-content ">
+              <span class="card-title activator  text-darken-4 white-font">Comet</span>
+              <p><a class="white-text" href="#">Browse Comet</a></p>
+            </div>
+            <div class="card-reveal grey darken-3">
+              <span class="card-title  text-darken-4">Comet<i class="material-icons right">close</i></span>
+              <p>A comet is an icy, small Solar System body that, when passing close to the Sun, warms and begins to release gases, a process called outgassing. This produces a visible atmosphere or coma, and sometimes also a tail. These phenomena are due to the effects of solar radiation and the solar wind acting upon the nucleus of the comet. Comet nuclei range from a few hundred meters to tens of kilometers across and are composed of loose collections of ice, dust, and small rocky particles. The coma may be up to 15 times Earth's diameter, while the tail may stretch one astronomical unit. If sufficiently bright, a comet may be seen from Earth without the aid of a telescope and may subtend an arc of 30° (60 Moons) across the sky. Comets have been observed and recorded since ancient times by many cultures. </p>
+            </div>
+          </div>
+        </div>
+          </div>
+        <div class="modal-footer grey darken-3 z-depth-1">
+          <a href="#!" class="
+         white-text modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+    </section>
+
+  <!-- TOC Item -->
+    <section>
+      <div id="comet" class="modal">
+        <div class="modal-content white-text grey darken-3">
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+          <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjY7NKFipjmAhX0Q3wKHZq_DHsQFjAAegQIBRAB&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalley%2527s_Comet&usg=AOvVaw0Rp8yg5HHawxr3Y0ajIu8E" class="white-text">Comet</a></p>
+         
+
+        </div>
+        <div class="modal-footer grey darken-3 ">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Close</a>
+        </div>
       </div>
     </section>
 
@@ -104,7 +221,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-
-<!-- 
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-

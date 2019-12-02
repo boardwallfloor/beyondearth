@@ -5545,6 +5545,7 @@ button.btn-floating {
 .dropdown-content {
   background-color: #fff;
   margin: 0;
+  /*margin-left: 60px;*/
   display: none;
   min-width: 100px;
   overflow-y: auto;
@@ -5569,10 +5570,12 @@ button.btn-floating {
   line-height: 1.5rem;
   width: 100%;
   text-align: left;
+  opacity: 70%;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active {
-  background-color: #eee;
+  /*background-color: #eee;*/
+  opacity: 100%
 }
 
 .dropdown-content li:focus {
