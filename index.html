@@ -2,28 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>BeyondEarth - See Beyond Self</title>
+	<!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BeyondEarth - See Beyond Self</title>
   <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link rel="icon" href="asset/iconw_32.png">
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header>
   	<nav class="transparent z-depth-1">
   		<div class="nav-wrapper ">
         <!-- menu -->
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <ul id="nav-mobile" class="left ">
           <li><a class="menu" href="#!" data-target="dropdown1"><i class="material-icons right">menu</i></a></li>
-          <li><img src="asset/stars_white.png" alt="Stars" class="header-image"></li>
+          <li><img src="asset/stars_white.png" alt="Stars" class="header-image hide-on-small-and-down"></li>
           <li><a href="#" class="brand-logo brand-name"> BeyondEarth</a></li>
         </ul>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li>    
+          <li class="search">    
             <div class="input-field ">
             <i class="material-icons prefix">search</i>
             <input type="text" placeholder="Search.." id="autocomplete-input" class="autocomplete " >
@@ -45,7 +46,10 @@
       <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
       <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
     </ul>
+    
+    </section>
 
+    <section>
     <!-- Observation Log -->
     <ul id='dropdown2' class='dropdown-content'>
         <li><a href="#!">one</a></li>
@@ -56,33 +60,42 @@
         <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
       </ul>
     </section>
+  
+    <section>
+      <div class="right horizontal-grid">
+        <a class="waves-effect waves-light btn grey darken-3 z-depth-1 grid-horizontal-2-1"><i class="material-icons">zoom_in</i><!-- </a>
+        <a class="waves-effect waves-light btn grey darken-3 z-depth-1"> --><i class="material-icons">zoom_out</i></a>
+        <a class="waves-effect waves-light btn grey darken-3 z-depth-1"><i class="material-icons">zoom_out_map</i></a>
+      </div>
+    </section>
+
   </main>
   <footer>
 
     <div class="time-nav left">
 
       <div class="current-time">     
-          <a class="waves-effect waves-light btn">00:00</a>
+          <a class="waves-effect waves-light btn grey darken-3 z-depth-1" >00:00</a>
       </div>
 
       <div class="time-control">
-          <a class="waves-effect waves-light btn grey lighten-3"><i class="material-icons">fast_rewind</i></a>
-          <a class="waves-effect waves-light btn"><i class="material-icons">pause</i></a>
-          <a class="waves-effect waves-light btn"><i class="material-icons">fast_forward</i></a>
+          <a class="waves-effect waves-light btn grey darken-3 z-depth-1"><i class="material-icons">fast_rewind</i></a>
+          <a class="waves-effect waves-light btn grey darken-3 z-depth-1"><i class="material-icons">pause</i></a>
+          <a class="waves-effect waves-light btn grey darken-3 z-depth-1"><i class="material-icons">fast_forward</i></a>
       </div>
 
       <div class="time-reset">
-          <a class="waves-effect waves-light btn"><i class="material-icons">settings_backup_restore</i></a>
+          <a class="waves-effect waves-light btn grey darken-3 z-depth-1 "><i class="material-icons">settings_backup_restore</i></a>
       </div>
 
     </div>
 
     <div class="location-nav right">
       <div class="current-location">
-          <a class="waves-effect waves-light btn">Current Location, City, Country</a>
+          <a class="waves-effect waves-light btn grey darken-3">Current Location, City, Country</a>
       </div>
       <div class="go-current">
-          <a class="waves-effect waves-light btn"><i class="material-icons">my_location</i></a>
+          <a class="waves-effect waves-light btn grey darken-3"><i class="material-icons">my_location</i></a>
       </div>
     </div>
   </footer>

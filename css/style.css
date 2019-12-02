@@ -1,8 +1,6 @@
 	body {
-	background-image: url("../asset/background.jpg");
-}
-
-  body {
+		background-image: url("../asset/background_1.jpg");
+    background-size: cover;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -15,6 +13,10 @@
 
 	footer {
 		margin-bottom: : 40px;
+	}
+
+	input[type="text"]{
+    color: white;
 	}
 
 	.header-image{
@@ -37,12 +39,12 @@
 	 }
 	 /* label underline focus color */
 	.input-field input:focus {
-	   border-bottom: 1px solid red !important;
-	   box-shadow: 0 1px 0 0 red !important
+	   border-bottom: 1px solid #616161 !important;
+	   box-shadow: 0 1px 0 0 #616161 !important
 	 }
 
 	.input-field .prefix.active {
-	  color: red;
+	  color: #616161;
 	}
 
 	.gizmo {
@@ -73,4 +75,24 @@
 	.time-reset {
 		margin-left: 30px;
 	}
+
+	.search {
+		margin-right: 300px;
+	}
+
+	.horizontal-grid {
+		margin-right: 30px;
+		display: grid;
+		grid-template-rows: repeat(3,1fr);
+		grid-row-gap : 10px;
+
+	}
+
+	.grid-horizontal-2-1 {
+		display: grid;
+		grid-template-rows: repeat(3,1fr);
+		padding-bottom: 70px;
+	}
+
+
 
